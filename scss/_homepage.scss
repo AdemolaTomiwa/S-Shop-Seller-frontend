@@ -1,0 +1,103 @@
+.home-page {
+   .home-showcase {
+      background-color: $white-color;
+      color: $primary-color;
+
+      .wrapper {
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         flex-wrap: wrap-reverse;
+         width: 100%;
+         gap: 1rem;
+
+         .img {
+            width: 300px;
+            height: 300px;
+
+            img {
+               border-radius: 100%;
+               object-fit: cover;
+               border: 2px solid $primary-color;
+               background-color: $white-color;
+               @include easeOut();
+            }
+         }
+      }
+   }
+
+   .learn-basics {
+      background-color: $primary-color;
+      color: $white-color;
+
+      .boxes {
+         display: flex;
+         align-items: flex-start;
+         justify-content: flex-start;
+         flex-direction: column;
+         flex-wrap: wrap;
+         gap: 1rem;
+
+         .box {
+            background-color: $grey-color;
+            width: 100%;
+            color: $white-color;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            cursor: pointer;
+            @include easeOut();
+
+            .img {
+               width: 150px;
+               height: 120px;
+
+               img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 100%;
+               }
+            }
+
+            .details {
+               width: 100%;
+
+               h5 {
+                  text-transform: uppercase;
+                  @include easeOut();
+               }
+            }
+         }
+      }
+   }
+
+   .frequently-asked-questions {
+      .questions {
+         .question {
+            background-color: $primary-color;
+            color: $white-color;
+
+            small {
+               display: inline-block;
+               margin-top: 0.5rem;
+            }
+         }
+      }
+
+      .box {
+         background-color: $grey-color;
+         color: $white-color;
+         text-align: center;
+
+         a {
+            @include easeOut();
+
+            &:hover {
+               color: $secondary-color;
+            }
+         }
+      }
+   }
+}

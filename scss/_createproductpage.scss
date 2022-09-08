@@ -1,0 +1,27 @@
+.create-product-page {
+   .create-product-form {
+      form {
+         div {
+            input,
+            textarea,
+            select {
+               border: 1px solid $primary-color;
+               @include easeOut();
+
+               &:focus {
+                  border: 1px solid $secondary-color;
+               }
+            }
+         }
+         p {
+            span {
+               cursor: pointer;
+            }
+         }
+      }
+   }
+
+   .back-btn.container {
+      margin: 1rem auto;
+   }
+}
