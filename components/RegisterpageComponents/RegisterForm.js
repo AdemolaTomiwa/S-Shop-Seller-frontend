@@ -251,9 +251,9 @@ const RegisterForm = () => {
                <p>
                   Already have a seller's account?{' '}
                   <Link href="/">
-                     <span className="text-secondary">
+                     <strong className="text-secondary">
                         Login to your seller's account
-                     </span>
+                     </strong>
                   </Link>
                </p>
             </form>

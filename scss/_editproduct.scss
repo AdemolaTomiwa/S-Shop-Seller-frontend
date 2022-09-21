@@ -1,0 +1,28 @@
+.edit-product-page {
+   .edit-product-form {
+      padding-bottom: 2rem;
+      form {
+         div {
+            input,
+            textarea,
+            select {
+               border: 1px solid $primary-color;
+               @include easeOut();
+
+               &:focus {
+                  border: 1px solid $secondary-color;
+               }
+            }
+         }
+         p {
+            span {
+               cursor: pointer;
+            }
+         }
+      }
+   }
+
+   .edit-product-intro {
+      padding: 0;
+   }
+}

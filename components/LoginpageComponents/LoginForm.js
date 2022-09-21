@@ -73,6 +73,9 @@ const LoginForm = () => {
                      {showPassword ? <FaEyeSlash /> : <FaEye />}
                   </span>
                </div>
+               <Link className="my-1 text-secondary" href="/forgotpassword">
+                  Forgotten password?
+               </Link>
                {msg && <ErrorMessageBox msg={msg} />}
                <div>
                   <button className="btn btn-primary">
@@ -82,9 +85,9 @@ const LoginForm = () => {
                <p>
                   Don't have a seller's account?{' '}
                   <Link href="/register">
-                     <span className="text-secondary">
+                     <strong className="text-secondary">
                         Create a seller's account
-                     </span>
+                     </strong>
                   </Link>
                </p>
             </form>

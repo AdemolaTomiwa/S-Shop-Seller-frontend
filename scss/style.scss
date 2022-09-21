@@ -5,9 +5,13 @@
 @import 'registerpage';
 @import 'dashboardpage';
 @import 'allproductspage';
+@import 'productpage';
 @import 'personaldetailspage';
 @import 'changeloginpage';
 @import 'createproductpage';
+@import 'forgotpasswordpage';
+@import 'resetpasswordpage';
+@import 'editproduct';
 
 * {
    margin: 0;
@@ -44,7 +48,7 @@ header {
       gap: 0 1rem;
 
       .logo {
-         h4 {
+         h3 {
             cursor: pointer;
 
             @include easeOut();
@@ -171,3 +175,5 @@ footer {
       }
    }
 }
+
+@import 'mobile';

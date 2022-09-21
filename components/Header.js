@@ -22,11 +22,11 @@ const Header = () => {
          <div className="wrapper">
             <div className="logo">
                <Link href="/">
-                  <h4>
+                  <h3>
                      S-<span className="text-secondary">S</span>H
                      <span className="text-grey">O</span>P{' '}
                      <span className="text-secondary">S</span>ELL
-                  </h4>
+                  </h3>
                </Link>
             </div>
             <nav>

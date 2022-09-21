@@ -14,6 +14,14 @@ import {
    CHANGE_USER_LOGIN_FAIL,
    UPDATE_USER_DETAILS_RESET,
    CHANGE_USER_LOGIN_RESET,
+   FORGOT_PASSWORD_REQUEST,
+   FORGOT_PASSWORD_SUCCESS,
+   FORGOT_PASSWORD_FAIL,
+   FORGOT_PASSWORD_RESET,
+   RESET_PASSWORD_REQUEST,
+   RESET_PASSWORD_SUCCESS,
+   RESET_PASSWORD_FAIL,
+   RESET_PASSWORD_RESET,
 } from '../constants/userConstants';
 
 // login user
@@ -92,6 +100,36 @@ export const changeLoginReducer = (state = {}, action) => {
       case CHANGE_USER_LOGIN_RESET:
          return {};
       case USER_LOGOUT:
+         return {};
+      default:
+         return state;
+   }
+};
+
+export const forgotPasswordReducer = (state = {}, action) => {
+   switch (action.type) {
+      case FORGOT_PASSWORD_REQUEST:
+         return { loading: true };
+      case FORGOT_PASSWORD_SUCCESS:
+         return { loading: false, success: action.payload.msg };
+      case FORGOT_PASSWORD_FAIL:
+         return { loading: false };
+      case FORGOT_PASSWORD_RESET:
+         return {};
+      default:
+         return state;
+   }
+};
+
+export const resetPasswordReducer = (state = {}, action) => {
+   switch (action.type) {
+      case RESET_PASSWORD_REQUEST:
+         return { loading: true };
+      case RESET_PASSWORD_SUCCESS:
+         return { loading: false, success: action.payload.msg };
+      case RESET_PASSWORD_FAIL:
+         return { loading: false };
+      case RESET_PASSWORD_RESET:
          return {};
       default:
          return state;

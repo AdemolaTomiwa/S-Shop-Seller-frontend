@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { returnErrors } from './errorActions';
+import { clearErrors, returnErrors } from './errorActions';
 import {
    LOGIN_USER_REQUEST,
    LOGIN_USER_SUCCESS,
@@ -14,6 +14,12 @@ import {
    CHANGE_USER_LOGIN_REQUEST,
    CHANGE_USER_LOGIN_SUCCESS,
    CHANGE_USER_LOGIN_FAIL,
+   FORGOT_PASSWORD_REQUEST,
+   FORGOT_PASSWORD_SUCCESS,
+   FORGOT_PASSWORD_FAIL,
+   RESET_PASSWORD_REQUEST,
+   RESET_PASSWORD_SUCCESS,
+   RESET_PASSWORD_FAIL,
 } from '../constants/userConstants';
 import { server } from '../../config/server';
 import { CLEAR_ERRORS } from '../constants/errorConstants';
@@ -102,6 +108,55 @@ export const changeLogin = (passwords) => async (dispatch, getState) => {
       dispatch(returnErrors(err.response.data.msg));
       dispatch({ type: CHANGE_USER_LOGIN_FAIL });
    }
+};
+
+// Forgot password
+export const forgotPassword = (email) => (dispatch) => {
+   dispatch({ type: CLEAR_ERRORS });
+   dispatch({ type: FORGOT_PASSWORD_REQUEST });
+
+   const config = {
+      headers: {
+         'Content-type': 'application/json',
+      },
+   };
+
+   axios
+      .post(`${server}/api/password-reset`, email, config)
+      .then((res) => {
+         dispatch({
+            type: FORGOT_PASSWORD_SUCCESS,
+            payload: res.data,
+         });
+      })
+      .catch((err) => {
+         dispatch(returnErrors(err.response.data.msg));
+         dispatch({ type: FORGOT_PASSWORD_FAIL });
+      });
+};
+
+export const resetPassword = (url, passwordObj) => (dispatch) => {
+   dispatch({ type: CLEAR_ERRORS });
+   dispatch({ type: RESET_PASSWORD_REQUEST });
+   const config = {
+      headers: {
+         'Content-type': 'application/json',
+      },
+   };
+
+   axios
+      .post(url, passwordObj, config)
+      .then((res) => {
+         dispatch({
+            type: RESET_PASSWORD_SUCCESS,
+            payload: res.data,
+         });
+         dispatch(clearErrors());
+      })
+      .catch((err) => {
+         dispatch(returnErrors(err.response.data.msg));
+         dispatch({ type: RESET_PASSWORD_FAIL });
+      });
 };
 
 // logout user

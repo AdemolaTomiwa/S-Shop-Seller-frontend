@@ -36,7 +36,7 @@ const DashboardShowcase = () => {
                         </Link>{' '}
                         &gt;{' '}
                         <Link href={`/dashboard`}>
-                           <span>Profile</span>
+                           <span>Dashboard</span>
                         </Link>{' '}
                      </h6>
                   </div>

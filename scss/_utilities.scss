@@ -2,6 +2,10 @@ img {
    width: 100%;
 }
 
+.page {
+   min-height: 70vh;
+}
+
 a {
    color: $white-color;
    text-decoration: none;
@@ -254,6 +258,13 @@ h6 {
       opacity: 0.6;
       cursor: not-allowed;
    }
+}
+
+.notification-box {
+   background-color: $secondary-color;
+   color: $white-color;
+   text-transform: uppercase;
+   text-align: center;
 }
 
 .lead {
@@ -514,7 +525,6 @@ select {
    width: 100%;
    text-transform: uppercase;
 }
-
 
 .search-box {
    form {

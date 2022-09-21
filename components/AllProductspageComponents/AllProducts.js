@@ -92,7 +92,7 @@ const AllProducts = () => {
                               <div className="name">
                                  <Link
                                     href="/product[id]"
-                                    as="product/product._id"
+                                    as={`product/${product._id}`}
                                  >
                                     <h5>
                                        {product.name.length >= 50

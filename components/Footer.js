@@ -3,9 +3,6 @@ import Link from 'next/link';
 import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
-import { RiMastercardFill } from 'react-icons/ri';
-import { RiVisaFill } from 'react-icons/ri';
-import { BsCashStack } from 'react-icons/bs';
 
 const Footer = () => {
    return (
@@ -21,18 +18,6 @@ const Footer = () => {
                         <Link href="/">
                            <strong className="my-0">Help center</strong>
                         </Link>
-                        <Link href="/">
-                           <strong className="my-0">Help center</strong>
-                        </Link>
-                        <Link href="/">
-                           <strong className="my-0">Help center</strong>
-                        </Link>
-                        <Link href="/">
-                           <strong className="my-0">Help center</strong>
-                        </Link>
-                        <Link href="/">
-                           <strong className="my-0">Help center</strong>
-                        </Link>
                      </div>
                   </div>
                   <div className="box p-1">
@@ -40,8 +25,13 @@ const Footer = () => {
                         <h5 className="py-1">Make money on S-Shop</h5>
                      </div>
                      <div className="footer-links">
-                        <Link href="/sellingdashboard">
+                        <Link href="/">
                            <strong className="my-0">Sell on S-Shop</strong>
+                        </Link>
+                        <Link href="/">
+                           <strong className="my-0">
+                              Go back to main website
+                           </strong>
                         </Link>
                      </div>
                   </div>
@@ -63,28 +53,6 @@ const Footer = () => {
                         <Link href="/">
                            <strong className="my-0">
                               <BsInstagram className="icon" />
-                           </strong>
-                        </Link>
-                     </div>
-                  </div>
-                  <div className="box p-1 footer-payments">
-                     <div className="head">
-                        <h5 className="py-1">Payment Methods</h5>
-                     </div>
-                     <div className="footer-links">
-                        <Link href="/">
-                           <strong className="my-0">
-                              <RiMastercardFill className="icon" />
-                           </strong>
-                        </Link>
-                        <Link href="/">
-                           <strong className="my-0">
-                              <RiVisaFill className="icon" />
-                           </strong>
-                        </Link>
-                        <Link href="/">
-                           <strong className="my-0">
-                              <BsCashStack className="icon" />
                            </strong>
                         </Link>
                      </div>
