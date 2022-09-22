@@ -31,10 +31,12 @@ const ForgotPasswordForm = () => {
       <div className="forgot-password-form section">
          <div className="container">
             <div className="head py-1">
-               <h4>S-SHOP</h4>
+               <h4>S-SHOP Seller</h4>
             </div>
             <div className="intro">
-               <p className="lead">Forgot your S-SHOP account password</p>
+               <p className="lead">
+                  Forgot your S-SHOP seller account password
+               </p>
             </div>
             <form onSubmit={handleSubmit}>
                <div>

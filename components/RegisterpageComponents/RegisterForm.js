@@ -85,12 +85,12 @@ const RegisterForm = () => {
       <div className="register-form section">
          <div className="container">
             <div className="head py-1">
-               <h4>S-SHOP</h4>
+               <h4>S-SHOP Seller</h4>
             </div>
             <div className="intro">
                <p className="lead">
                   Create a S-Shop seller account. |{' '}
-                  <Link href="/">
+                  <Link href="/login">
                      <span className="text-secondary">
                         Login to your seller account
                      </span>
@@ -248,9 +248,9 @@ const RegisterForm = () => {
                      {loading ? <SmallWhiteSpinner /> : 'Register'}{' '}
                   </button>
                </div>
-               <p>
+               <p className="my-1">
                   Already have a seller account?{' '}
-                  <Link href="/">
+                  <Link href="/login">
                      <strong className="text-secondary">
                         Login to your seller account
                      </strong>

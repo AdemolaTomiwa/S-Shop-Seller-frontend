@@ -41,7 +41,7 @@ const LoginForm = () => {
       <div className="login-form section">
          <div className="container">
             <div className="head py-1">
-               <h4>S-SHOP</h4>
+               <h4>S-SHOP Seller</h4>
             </div>
             <div className="intro">
                <p className="lead">
@@ -82,7 +82,7 @@ const LoginForm = () => {
                      {loading ? <SmallWhiteSpinner /> : 'Login'}{' '}
                   </button>
                </div>
-               <p>
+               <p className="my-1">
                   Do not have a seller account?{' '}
                   <Link href="/register">
                      <strong className="text-secondary">
