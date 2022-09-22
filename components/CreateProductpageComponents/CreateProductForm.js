@@ -32,7 +32,7 @@ const CreateProductForm = () => {
 
    useEffect(() => {
       dispatch({ type: CREATE_PRODUCT_RESET });
-   }, []);
+   }, [dispatch]);
 
    useEffect(() => {
       setBrand(user?.brandName);

@@ -14,7 +14,7 @@ const DeleteProductModal = ({ product, closeModal }) => {
       if (success) {
          closeModal();
       }
-   }, [success]);
+   }, [success, closeModal]);
 
    return (
       <div className="delete-modal">

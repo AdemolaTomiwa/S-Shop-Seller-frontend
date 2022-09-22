@@ -89,10 +89,10 @@ const RegisterForm = () => {
             </div>
             <div className="intro">
                <p className="lead">
-                  Create a S-Shop seller's account. |{' '}
+                  Create a S-Shop seller account. |{' '}
                   <Link href="/">
                      <span className="text-secondary">
-                        Login to your seller's account
+                        Login to your seller account
                      </span>
                   </Link>
                </p>
@@ -249,10 +249,10 @@ const RegisterForm = () => {
                   </button>
                </div>
                <p>
-                  Already have a seller's account?{' '}
+                  Already have a seller account?{' '}
                   <Link href="/">
                      <strong className="text-secondary">
-                        Login to your seller's account
+                        Login to your seller account
                      </strong>
                   </Link>
                </p>

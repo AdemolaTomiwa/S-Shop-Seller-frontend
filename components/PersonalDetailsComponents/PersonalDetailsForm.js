@@ -47,7 +47,7 @@ const PersonalDetailsForm = () => {
 
    useEffect(() => {
       dispatch({ type: UPDATE_USER_DETAILS_RESET });
-   }, []);
+   }, [dispatch]);
 
    const onDrop = useCallback((acceptedFiles) => {
       acceptedFiles.forEach((file) => {

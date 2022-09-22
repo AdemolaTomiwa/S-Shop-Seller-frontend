@@ -45,10 +45,10 @@ const LoginForm = () => {
             </div>
             <div className="intro">
                <p className="lead">
-                  Login to your S-SHOP seller's account |{' '}
+                  Login to your S-SHOP seller account |{' '}
                   <Link href="/register">
                      <span className="text-secondary">
-                        Create a seller's account now
+                        Create a seller account now
                      </span>
                   </Link>
                </p>
@@ -83,10 +83,10 @@ const LoginForm = () => {
                   </button>
                </div>
                <p>
-                  Don't have a seller's account?{' '}
+                  Do not have a seller account?{' '}
                   <Link href="/register">
                      <strong className="text-secondary">
-                        Create a seller's account
+                        Create a seller account
                      </strong>
                   </Link>
                </p>

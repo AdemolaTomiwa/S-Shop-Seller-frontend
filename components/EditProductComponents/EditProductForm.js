@@ -37,7 +37,7 @@ const EditProductForm = ({ productDetails }) => {
       if (!user) {
          router.push('/login');
       }
-   }, [dispatch, user]);
+   }, [dispatch, user, router]);
 
    useEffect(() => {
       dispatch({ type: CLEAR_ERRORS });
