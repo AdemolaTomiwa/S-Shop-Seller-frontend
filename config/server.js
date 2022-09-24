@@ -1,2 +1,2 @@
 // export const server = 'http://localhost:8080';
-export const server = 'https://sshop-seller-test.herokuapp.com';
+export const server = 'https://s-s-h-o-p-s-e-l-l-e-r.herokuapp.com';
