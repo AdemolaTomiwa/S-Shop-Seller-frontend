@@ -128,11 +128,22 @@ const EditProductForm = ({ productDetails }) => {
                      id="varaition"
                   >
                      <option value="all">All</option>
-                     <option value="shoes">Shoes</option>
-                     <option value="clothes">clothes</option>
                      <option value="bags">bags</option>
-                     <option value="food">food</option>
-                     <option value="electronics">electronics</option>
+                     <option value="cap">cap</option>
+                     <option value="clothes">clothes</option>
+                     <option value="frangrance">frangrance</option>
+                     <option value="glasses">glasses</option>
+                     <option value="hair accessory">jewerly</option>
+                     <option value="smart phone">
+                        smart phone and accessory
+                     </option>
+                     <option value="skin and hair care">
+                        skin and hair care
+                     </option>
+                     <option value="shoes">shoes</option>
+                     <option value="watches">watches</option>
+                     <option value="wallpaper">wallpaper</option>
+                     <option value="all">others</option>
                   </select>
                </div>
                <div>

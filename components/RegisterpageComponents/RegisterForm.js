@@ -198,13 +198,68 @@ const RegisterForm = () => {
                         id="bankName"
                      >
                         <option value="">Select bank</option>
+                        <option value="Access bank (Diamond)">
+                           Access Bank (Diamond)
+                        </option>
                         <option value="Access bank">Access Bank</option>
+                        <option value="Citi bank">Citi Bank</option>
+                        <option value="Ecobank">EcoBank</option>
+                        <option value="FCMB">FCMB</option>
+                        <option value="Fidelity bank">Fidelity Bank</option>
+                        <option value="First bank of Nigeria">
+                           First Bank of Nigeria
+                        </option>
+                        <option value="GTBank Plc">GTBank Plc</option>
+                        <option value="Globus bank">Globus Bank</option>
+                        <option value="Haggai Mortgage bank Limited">
+                           Haggai Mortgage bank Limited
+                        </option>
+                        <option value="Heritage">Heritage</option>
+                        <option value="JAIZ Bank">JAIZ Bank</option>
+                        <option value="Keystone bank">Keystone Bank</option>
+                        <option value="LOTUS bank">LOTUS Bank</option>
+                        <option value="PARALLEX bank">PARALLEX Bank</option>
+                        <option value="Polaris bank">Polaris Bank</option>
+                        <option value="Premium trust bank">
+                           Premium trust Bank
+                        </option>
+                        <option value="Providus bank">Providus Bank</option>
+                        <option value="SUNTRUST bank">SUNTRUST Bank</option>
+                        <option value="StanbicIBTC bank">
+                           StanbicIBTC Bank
+                        </option>
+                        <option value="StandardChartered">
+                           StandardChartered
+                        </option>
+                        <option value="Sterling bank">Sterling bank</option>
+                        <option value="TITAN TRUST BANK">
+                           TITAN TRUST BANK
+                        </option>
+                        <option value="TITAN-PAYSTACK">TITAN PAYSTACK</option>
+                        <option value="Taj bank">Taj Bank</option>
+                        <option value="UNAAB MICROFINANCE BANK">
+                           UNAAB MICROFINANCE BANK
+                        </option>
+                        <option value="Union bank">Union Bank</option>
+                        <option value="Unity bank">Unity Bank</option>
                         <option value="United bank of africa">
                            United bank of africa
                         </option>
-                        <option value="First bank">first bank</option>
-                        <option value="Zenith bank">Zenith bank</option>
-                        <option value="Polaris bank">Polaris bank</option>
+                        <option value="Wema bank">Wema Bank</option>
+                        <option value="YOBE MICROFINANCE BANK">
+                           YOBE MICROFINANCE BANK
+                        </option>
+                        <option value="ZENITH BANK">ZENITH BANK</option>
+                        <option value="e-Naira">e-Naira</option>
+                        <option value="PayAttitude Online">
+                           PayAttitude Online
+                        </option>
+                        <option value="Konga pay">Konga pay</option>
+                        <option value="Kuda microfinance bank">
+                           Kuda Microfinance bank
+                        </option>
+                        <option value="Opay">Opay</option>
+                        <option value="Paga">Paga</option>
                      </select>
                   </div>
                   <div>
