@@ -12,16 +12,6 @@ const Footer = () => {
                <div className="wrapper">
                   <div className="box p-1">
                      <div className="head">
-                        <h5 className="py-1">Let us help you</h5>
-                     </div>
-                     <div className="footer-links">
-                        <Link href="/">
-                           <strong className="my-0">Help center</strong>
-                        </Link>
-                     </div>
-                  </div>
-                  <div className="box p-1">
-                     <div className="head">
                         <h5 className="py-1">Make money on S-Shop</h5>
                      </div>
                      <div className="footer-links">

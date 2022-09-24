@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaEyeSlash, FaEye } from 'react-icons/fa';
 import { loginUser } from '../../store/actions/userActions';
 import { useDispatch, useSelector } from 'react-redux';
