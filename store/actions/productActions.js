@@ -8,6 +8,7 @@ import {
    DELETE_PRODUCT_FAIL,
    DELETE_PRODUCT_REQUEST,
    DELETE_PRODUCT_SUCCESS,
+   DELETE_PRODUCT_RESET,
    GET_PRODUCTS_FAIL,
    GET_PRODUCTS_REQUEST,
    GET_PRODUCTS_SUCCESS,
@@ -25,6 +26,7 @@ export const getProducts =
    (keyword = '') =>
    async (dispatch, getState) => {
       try {
+         dispatch({ type: DELETE_PRODUCT_RESET })
          dispatch({ type: GET_PRODUCTS_REQUEST });
 
          const { data } = await axios.get(
