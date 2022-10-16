@@ -16,15 +16,6 @@ const FrequentlyAskedQuestions = () => {
                      you money
                   </small>
                </div>
-               <div className="question my-0 p-1">
-                  <h5>When will I get paid</h5>
-                  <small>
-                     {' '}
-                     You can schedule either daily, weekly or monthly payouts
-                     and S-Shop with deposit your earnings directly into your
-                     bank account
-                  </small>
-               </div>
             </div>
             <Box />
          </div>

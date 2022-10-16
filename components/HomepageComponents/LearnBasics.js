@@ -7,7 +7,7 @@ const LearnBasics = () => {
             <div className="head py-1">
                <h4>Learn the basics</h4>
             </div>
-            <div className="boxes">
+            < className="boxes">
                <div className="box">
                   <div className="img p-0">
                      <img
@@ -32,14 +32,6 @@ const LearnBasics = () => {
                      <p className="py-1">
                         Upload your best selling products and start selling.
                      </p>
-                  </div>
-               </div>
-               <div className="box">
-                  <div className="img p-0">
-                     <img
-                        src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/09/205144/1.jpg?0768"
-                        alt=""
-                     />
                   </div>
                </div>
             </div>
