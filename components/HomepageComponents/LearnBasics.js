@@ -7,7 +7,7 @@ const LearnBasics = () => {
             <div className="head py-1">
                <h4>Learn the basics</h4>
             </div>
-            < className="boxes">
+            <div className="boxes">
                <div className="box">
                   <div className="img p-0">
                      <img
