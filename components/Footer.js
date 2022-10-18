@@ -18,11 +18,9 @@ const Footer = () => {
                         <Link href="/">
                            <strong className="my-0">Sell on S-Shop</strong>
                         </Link>
-                        <Link href="/">
-                           <strong className="my-0">
-                              Go back to main website
-                           </strong>
-                        </Link>
+                        <a href="https://www.sshop.com.ng">
+                           <strong className="my-0"> Go back to main website</strong>
+                        </a>
                      </div>
                   </div>
                   <div className="box p-1 footer-social">
